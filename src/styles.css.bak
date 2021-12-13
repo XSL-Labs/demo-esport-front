@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url(../assets/fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url(../assets/fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url(../assets/fonts/Roboto-Bold.ttf);
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  body {
+    @apply bg-black h-screen;
+  }
+  #app {
+    @apply flex flex-col min-h-full;
+  }
+}
